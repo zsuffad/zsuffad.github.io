@@ -42,12 +42,6 @@ a {
   color: var(--dark-bg);
 }
 
-a:after {
-  /* content: attr(href);
-  display: inline-block; */
-  /* padding-left: .6rem; */
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -66,8 +60,6 @@ ul {
   display: grid;
   grid-template-columns: 1fr 2fr;
   background: #fcfcfc;
-  /* max-width: 120rem;
-  margin: 0 auto; */
 }
 
 /* HEADER */
@@ -76,24 +68,10 @@ ul {
   height: 23.8rem;
 }
 
-.cv-header:before {
-  content: "";
-  background: #768ee3;
-  height: 16rem;
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 4rem;
-  z-index: -1;
-}
-
 .header-inner {
-  /* max-width: 120rem;
-  margin: 0 auto; */
   display: grid;
   grid-template-columns: 1fr 2fr;
   background-color: var(--dark-bg-inv);
-
 }
 
 .profile-pic {
@@ -101,7 +79,7 @@ ul {
   justify-content: center;
   padding: 3rem 4rem;
   background-color: #2d2e29; /* black */
-  min-width: 36rem;
+  min-width: 38rem;
 }
 
 .profile-pic img {
@@ -221,7 +199,6 @@ ul {
 .mdash {
   padding:0 1rem;
 }
-
 
 .item__job-description {
   display: block;
@@ -377,7 +354,6 @@ a:hover:after {
   filter: invert(1) opacity(0.8);
 }
 
-
 /* animated underline */
 
 :not(.item--website) > a {
@@ -438,8 +414,8 @@ a:focus {
     flex-direction: column;
   }
 
-  .cv-header:before {
-    display: none;
+  .cv-header {
+    height: auto;
   }
 
   .profile-pic {
@@ -501,5 +477,4 @@ a:focus {
     font-size: 2.4rem;
     margin-top: 0;
   }
-
 }

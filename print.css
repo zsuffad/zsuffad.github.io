@@ -1,0 +1,59 @@
+@media print {
+
+  body {
+    zoom: 50%;
+  }
+
+  html,body{height:100%;width:100%;margin:0;padding:0;}
+
+  @page {
+    margin: 0cm;
+    size: A4 portrait;
+    max-height:100%;
+	  max-width:20cm;
+  }
+
+  body{
+    color: #000 !important;
+  }
+
+  .profile-pic {
+    background-color: var(--dark-bg-inv);
+  }
+
+  .profile-pic,
+  .sidebar {
+    border-right: 4px solid var(--dark-bg-inv);
+  }
+
+  .profile-pic img {
+    border: 6px solid #efefef;
+  }
+
+  p a {
+    word-wrap: break-word;
+  }
+
+  .sidebar a,
+  .sidebar p,
+  .sidebar li,
+  .sidebar span {
+    color: #000 !important;
+  }
+
+  .sidebar {
+    background-color: #fafafa;
+  }
+
+  .social-item a:after {
+    content: attr(href);
+    display: block;
+    background: none;
+    width: initial;
+    height: initial;
+    filter: initial;
+    line-height: .8;
+    color: #555;
+    padding: 0;
+  }
+}
